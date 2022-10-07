@@ -26,6 +26,7 @@ def ejecutar():
         producto = Producto("0001","Producto 1","Descripción del producto 1",100)
         print(producto)
         producto.pvp = 200
+        print("El nuevo PVP es: ", producto.pvp)
         print(""),print(producto)
 
     elif seleccion == 4:
