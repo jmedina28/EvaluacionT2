@@ -17,3 +17,8 @@ try:
     paises["alemania"]
 except KeyError:
     print("Error: El país al que intenta usted acceder no se encuentra en el diccionario, introduzca un país que se encuentre en el diccionario.")
+
+try:
+    resultado = "2" + 10
+except TypeError:
+    print("Error: No es posible sumar un número y una cadena de texto, introduzca un número o una cadena de texto.")
