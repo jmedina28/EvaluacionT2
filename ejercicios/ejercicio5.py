@@ -32,3 +32,15 @@ class Camioneta(Coche):
 
 camioneta = Camioneta("verde", 4, 90, 2000, 750)
 print(camioneta)
+
+class Bicicleta(Vehiculo):
+    
+    def __init__(self, color, ruedas, tipo):
+        super().__init__(color, ruedas)
+        self.tipo = tipo
+        
+    def __str__(self):
+        return super().__str__() + ", {}".format(self.tipo)
+
+bici1 = Bicicleta("rosa", 2, "urbana")
+print(bici1)
