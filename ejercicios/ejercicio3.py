@@ -14,3 +14,6 @@ PVP\t\t{}""".format(self.referencia,self.nombre,self.descripcion,self.pvp)
 
 producto = Producto("0001","Producto 1","Descripción del producto 1",100)
 print(producto)
+
+producto.pvp = 200
+print(""),print(producto)
