@@ -65,3 +65,21 @@ def catalogar(vehiculos):
         print(type(vehiculo).__name__, vehiculo)
 
 catalogar(vehiculos)
+
+def catalogar(vehiculos, ruedas = None):
+      
+    if ruedas != None:
+        cuenta = 0
+        for vehiculo in vehiculos:
+            if vehiculo.ruedas == ruedas: 
+                cuenta += 1
+        print("\nSe han encontrado {} vehículos con {} ruedas:".format(cuenta, ruedas))
+    
+    for vehiculo in vehiculos:
+        if ruedas == None:
+            print(type(vehiculo).__name__, vehiculo)
+        else:
+            if vehiculo.ruedas == ruedas:
+                print(type(vehiculo).__name__, vehiculo)
+
+catalogar(vehiculos,4)
