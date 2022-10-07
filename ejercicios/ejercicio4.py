@@ -10,3 +10,10 @@ try:
     lista[10]
 except IndexError:
     print("Error: El índice al que intenta usted acceder se encuentra fuera del rango que abarca la lista, introduzca un número mayor o igual que cero y menor que la longitud de la lista.")
+
+paises = { "españa":"español", "eeuu":"inglés", "italia":"italiano" } 
+
+try:
+    paises["alemania"]
+except KeyError:
+    print("Error: El país al que intenta usted acceder no se encuentra en el diccionario, introduzca un país que se encuentre en el diccionario.")
