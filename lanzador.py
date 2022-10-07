@@ -1,7 +1,8 @@
 from introducir import solicitar_introducir_numero
+from introducir.numero import solicitar_introducir_numero_extremo
 
 
-seleccion = solicitar_introducir_numero("Introduzca un número: ")
+seleccion = solicitar_introducir_numero_extremo("Introduzca el número del ejercicio que desea ejecutar: ", 1, 5)
 
 if seleccion == 1:
     from ejercicios.ejercicio1 import Alumno
