@@ -1,5 +1,5 @@
 import unittest
-from ejercicios.ejercicio3 import Producto
+from ejercicios.ejer3.ejercicio3 import Producto
 
 class TestEjercicio3(unittest.TestCase):
     

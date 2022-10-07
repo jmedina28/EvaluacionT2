@@ -1,5 +1,5 @@
 import unittest
-from ejercicios.ejercicio5 import Vehiculo, Coche, Camioneta, Bicicleta, Motocicleta
+from ejercicios.ejer5.ejercicio5 import Vehiculo, Coche, Camioneta, Bicicleta, Motocicleta
 
 class TestEjercicio5(unittest.TestCase):
     
