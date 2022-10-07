@@ -1,4 +1,3 @@
-from introducir import solicitar_introducir_numero
 from introducir.numero import solicitar_introducir_numero_extremo
 
 
