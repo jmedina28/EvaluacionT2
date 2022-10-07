@@ -4,10 +4,8 @@ class Alumno:
         self.nombre = nombre
         self.apellido = apellido
         self.nota = nota
+        print("El alumno se ha creado con éxito.")
     
-    def __str__(self):
-        return f"El alumno llamado {self.nombre} {self.apellido} con una nota de {self.nota} se ha creado con éxito."
-
     def calificacion(self):
         if self.nota >= 5:
             return "Aprobado"
