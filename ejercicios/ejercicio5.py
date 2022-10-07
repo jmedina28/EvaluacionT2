@@ -17,3 +17,6 @@ class Coche(Vehiculo):
         
     def __str__(self):
         return super().__str__() + ", {} km/h, {} cc".format(self.velocidad, self.cilindrada)
+
+coche = Coche("azul", 4, 150, 1300)
+print(coche)
