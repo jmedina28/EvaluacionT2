@@ -19,7 +19,7 @@ class Coche(Vehiculo):
         return super().__str__() + ", {} km/h, {} cc".format(self.velocidad, self.cilindrada)
 
 coche = Coche("azul", 4, 150, 1300)
-print(coche)
+
 
 class Camioneta(Coche):
     
@@ -31,7 +31,7 @@ class Camioneta(Coche):
         return super().__str__() + ", soporta {} kg de carga".format(self.carga)
 
 camioneta = Camioneta("verde", 4, 90, 2000, 750)
-print(camioneta)
+
 
 class Bicicleta(Vehiculo):
     
@@ -43,7 +43,7 @@ class Bicicleta(Vehiculo):
         return super().__str__() + ", {}".format(self.tipo)
 
 bici1 = Bicicleta("rosa", 2, "urbana")
-print(bici1)
+
 
 class Motocicleta(Bicicleta):
     
@@ -56,4 +56,12 @@ class Motocicleta(Bicicleta):
         return super().__str__() + ", {} km/h, {} cc".format(self.velocidad, self.cilindrada) 
     
 moto1 = Motocicleta("negra", 2, "deportiva", 200, 600)
-print(moto1)
+
+
+vehiculos = [coche, camioneta, bici1, moto1]
+
+def catalogar(vehiculos):
+    for vehiculo in vehiculos:
+        print(type(vehiculo).__name__, vehiculo)
+
+catalogar(vehiculos)
