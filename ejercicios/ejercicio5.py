@@ -44,3 +44,16 @@ class Bicicleta(Vehiculo):
 
 bici1 = Bicicleta("rosa", 2, "urbana")
 print(bici1)
+
+class Motocicleta(Bicicleta):
+    
+    def __init__(self, color, ruedas, tipo, velocidad, cilindrada):
+        super().__init__(color, ruedas, tipo)
+        self.velocidad = velocidad
+        self.cilindrada = cilindrada
+        
+    def __str__(self):
+        return super().__str__() + ", {} km/h, {} cc".format(self.velocidad, self.cilindrada) 
+    
+moto1 = Motocicleta("negra", 2, "deportiva", 200, 600)
+print(moto1)
