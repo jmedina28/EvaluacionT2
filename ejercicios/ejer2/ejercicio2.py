@@ -13,12 +13,3 @@ class Alumno:
             return "Aprobado"
         else:
             return "Suspenso"
-
-alumno1 = Alumno("Juan", "Pérez", 7)
-alumno2 = Alumno("Maria", "García", 4)
-
-print(alumno1)
-print(alumno2)
-
-print(alumno1.calificacion())
-print(alumno2.calificacion())

@@ -19,7 +19,7 @@ def ejecutar():
         alumno2 = Alumno("Maria", "García", 4)
         print(alumno2)
         print(alumno2.calificacion())
-        
+
     elif seleccion == 3:
         from ejercicios.ejer3.ejercicio3 import Producto
 
