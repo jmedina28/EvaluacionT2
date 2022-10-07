@@ -21,10 +21,15 @@ elif seleccion == 2:
     print(alumno2.calificacion())
     
 elif seleccion == 3:
-    from ejercicios import ejercicio3
+    from ejercicios.ejercicio3 import Producto
+
+    producto = Producto("0001","Producto 1","Descripción del producto 1",100)
+    print(producto)
+    producto.pvp = 200
+    print(""),print(producto)
 
 elif seleccion == 4:
-    from ejercicios import ejercicio4
+    import ejercicios.ejercicio4
 
 elif seleccion == 5:
     from ejercicios import ejercicio5
